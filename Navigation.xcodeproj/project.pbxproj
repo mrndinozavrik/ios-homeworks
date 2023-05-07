@@ -10,9 +10,12 @@
 		845B6A242A028DDF0011148E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A232A028DDF0011148E /* AppDelegate.swift */; };
 		845B6A262A028DDF0011148E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A252A028DDF0011148E /* SceneDelegate.swift */; };
 		845B6A282A028DDF0011148E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A272A028DDF0011148E /* ViewController.swift */; };
-		845B6A2B2A028DDF0011148E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845B6A292A028DDF0011148E /* Main.storyboard */; };
 		845B6A2D2A028DE30011148E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845B6A2C2A028DE30011148E /* Assets.xcassets */; };
 		845B6A302A028DE30011148E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845B6A2E2A028DE30011148E /* LaunchScreen.storyboard */; };
+		845B6A3A2A0633F20011148E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A392A0633F20011148E /* NewsViewController.swift */; };
+		845B6A3C2A0634190011148E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A3B2A0634190011148E /* ProfileViewController.swift */; };
+		845B6A402A0642F70011148E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A3F2A0642F70011148E /* InfoViewController.swift */; };
+		845B6A442A0643170011148E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A432A0643170011148E /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		845B6A232A028DDF0011148E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845B6A252A028DDF0011148E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		845B6A272A028DDF0011148E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		845B6A2A2A028DDF0011148E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845B6A2C2A028DE30011148E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845B6A2F2A028DE30011148E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845B6A312A028DE30011148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845B6A392A0633F20011148E /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		845B6A3B2A0634190011148E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		845B6A3F2A0642F70011148E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		845B6A432A0643170011148E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,31 @@
 				845B6A232A028DDF0011148E /* AppDelegate.swift */,
 				845B6A252A028DDF0011148E /* SceneDelegate.swift */,
 				845B6A272A028DDF0011148E /* ViewController.swift */,
-				845B6A292A028DDF0011148E /* Main.storyboard */,
 				845B6A2C2A028DE30011148E /* Assets.xcassets */,
 				845B6A2E2A028DE30011148E /* LaunchScreen.storyboard */,
 				845B6A312A028DE30011148E /* Info.plist */,
+				845B6A3D2A06425E0011148E /* News */,
+				845B6A3E2A06426B0011148E /* Profile */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		845B6A3D2A06425E0011148E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				845B6A392A0633F20011148E /* NewsViewController.swift */,
+				845B6A3F2A0642F70011148E /* InfoViewController.swift */,
+				845B6A432A0643170011148E /* PostViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		845B6A3E2A06426B0011148E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				845B6A3B2A0634190011148E /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +152,6 @@
 			files = (
 				845B6A302A028DE30011148E /* LaunchScreen.storyboard in Resources */,
 				845B6A2D2A028DE30011148E /* Assets.xcassets in Resources */,
-				845B6A2B2A028DDF0011148E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +162,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845B6A442A0643170011148E /* PostViewController.swift in Sources */,
 				845B6A282A028DDF0011148E /* ViewController.swift in Sources */,
 				845B6A242A028DDF0011148E /* AppDelegate.swift in Sources */,
+				845B6A3C2A0634190011148E /* ProfileViewController.swift in Sources */,
 				845B6A262A028DDF0011148E /* SceneDelegate.swift in Sources */,
+				845B6A402A0642F70011148E /* InfoViewController.swift in Sources */,
+				845B6A3A2A0633F20011148E /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		845B6A292A028DDF0011148E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				845B6A2A2A028DDF0011148E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		845B6A2E2A028DE30011148E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
