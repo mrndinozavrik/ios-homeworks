@@ -1,6 +1,6 @@
 import UIKit
 
-class NewsViewController: UIViewController {
+class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class NewsViewController: UIViewController {
     
     @objc func goToPost() {
         let postViewController = PostViewController()
-        //postViewController.title = title
+        postViewController.title = title
         navigationController?.pushViewController(postViewController, animated: true)
     }
 }

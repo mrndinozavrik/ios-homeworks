@@ -18,22 +18,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: scene)
         
-        let newsViewController = NewsViewController()
-        let newsNavigationController = UINavigationController(rootViewController: newsViewController)
-        newsViewController.title = "Лента"
-        newsViewController.view.backgroundColor = .systemMint
+        let feedViewController = FeedViewController()
+        let feedNavigationController = UINavigationController(rootViewController: feedViewController)
+        feedViewController.title = "Лента"
+        feedViewController.view.backgroundColor = .systemMint
+        feedViewController.tabBarItem = UITabBarItem(title: "Лента", image: UIImage(systemName: "doc.richtext"), tag: 0)
         
         let profileViewController = ProfileViewController()
         let profileNavigationController = UINavigationController(rootViewController: profileViewController)
         profileViewController.title = "Профиль"
         profileViewController.view.backgroundColor = .systemPink
-        
-        newsViewController.tabBarItem = UITabBarItem(title: "Лента", image: UIImage(systemName: "doc.richtext"), tag: 0)
         profileViewController.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(systemName: "person.circle"), tag: 1)
         
         let tabBarController = UITabBarController()
-        
-        tabBarController.viewControllers = [newsViewController, profileViewController]
+        tabBarController.viewControllers = [feedViewController, profileViewController]
         tabBarController.tabBar.backgroundColor = .white
         tabBarController.tabBar.tintColor = .black
         tabBarController.selectedIndex = 1
