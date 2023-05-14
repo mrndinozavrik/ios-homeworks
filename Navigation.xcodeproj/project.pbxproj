@@ -15,7 +15,9 @@
 		845B6A3A2A0633F20011148E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A392A0633F20011148E /* FeedViewController.swift */; };
 		845B6A402A0642F70011148E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A3F2A0642F70011148E /* InfoViewController.swift */; };
 		845B6A442A0643170011148E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A432A0643170011148E /* PostViewController.swift */; };
-		848ECFDA2A0E934A005B9B21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFD92A0E934A005B9B21 /* ProfileViewController.swift */; };
+		848ECFDD2A0FA088005B9B21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */; };
+		848ECFE02A0FA122005B9B21 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */; };
+		848ECFE22A0FA2FC005B9B21 /* ProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		845B6A392A0633F20011148E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		845B6A3F2A0642F70011148E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		845B6A432A0643170011148E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		848ECFD92A0E934A005B9B21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,7 @@
 				845B6A2C2A028DE30011148E /* Assets.xcassets */,
 				845B6A2E2A028DE30011148E /* LaunchScreen.storyboard */,
 				845B6A312A028DE30011148E /* Info.plist */,
-				848ECFD92A0E934A005B9B21 /* ProfileViewController.swift */,
+				848ECFDE2A0FA095005B9B21 /* Profile */,
 				845B6A3D2A06425E0011148E /* News */,
 			);
 			path = Navigation;
@@ -82,6 +86,16 @@
 				845B6A432A0643170011148E /* PostViewController.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		848ECFDE2A0FA095005B9B21 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */,
+				848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */,
+				848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +170,13 @@
 			files = (
 				845B6A442A0643170011148E /* PostViewController.swift in Sources */,
 				845B6A282A028DDF0011148E /* ViewController.swift in Sources */,
+				848ECFE22A0FA2FC005B9B21 /* ProfileTableHeaderView.swift in Sources */,
 				845B6A242A028DDF0011148E /* AppDelegate.swift in Sources */,
 				845B6A262A028DDF0011148E /* SceneDelegate.swift in Sources */,
-				848ECFDA2A0E934A005B9B21 /* ProfileViewController.swift in Sources */,
+				848ECFDD2A0FA088005B9B21 /* ProfileViewController.swift in Sources */,
 				845B6A402A0642F70011148E /* InfoViewController.swift in Sources */,
 				845B6A3A2A0633F20011148E /* FeedViewController.swift in Sources */,
+				848ECFE02A0FA122005B9B21 /* ProfileHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
