@@ -29,7 +29,7 @@ class ProfileHeaderView: UIView {
     private let avatarLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Happy Cat"
+        label.text = "Hot Cat"
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.font = UIFont.boldSystemFont(ofSize: 18)
@@ -120,7 +120,7 @@ class ProfileHeaderView: UIView {
     
     @objc private func avatarTapped() {
         guard let profileViewController = findViewController() as? ProfileViewController else { return }
-//        profileViewController.animateAvatar(profileHeaderView: self)
+
     }
     
     @objc private func buttonPressed() {
@@ -150,16 +150,17 @@ extension ProfileHeaderView {
             
             
             avatarLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 27),
-            avatarLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+//            avatarLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            avatarLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
             
             
             statusLabel.bottomAnchor.constraint(equalTo: statusButton.topAnchor, constant: -60),
-            statusLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 25),
+            statusLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
             
             
             statusField.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 11),
-            statusField.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 21),
-            statusField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -21),
+            statusField.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
+            statusField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             statusField.heightAnchor.constraint(equalToConstant: 40),
             
             

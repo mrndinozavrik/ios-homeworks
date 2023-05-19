@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         profileViewController.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(systemName: "person.circle"), tag: 1)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [feedViewController, profileViewController]
+        tabBarController.viewControllers = [feedNavigationController, profileViewController]
         tabBarController.tabBar.backgroundColor = .white
         tabBarController.tabBar.tintColor = .black
         tabBarController.selectedIndex = 1

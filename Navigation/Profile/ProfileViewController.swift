@@ -19,21 +19,21 @@ class ProfileViewController: UIViewController {
     private let photosCellHeight: CGFloat = 150
     
     // MARK: -
-    var profileHeaderView : ProfileHeaderView!
+    var profileHeaderView = ProfileHeaderView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
-        profileHeaderView = Bundle.main.loadNibNamed("ProfileHeaderView", owner: nil)?.first as? ProfileHeaderView
         view.addSubview(profileHeaderView)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        profileHeaderView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        profileHeaderView.frame = CGRect(x: 0, y: 0, width: 320, height: view.frame.height)
+
         
     }
     

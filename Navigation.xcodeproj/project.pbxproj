@@ -17,7 +17,6 @@
 		845B6A442A0643170011148E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B6A432A0643170011148E /* PostViewController.swift */; };
 		848ECFDD2A0FA088005B9B21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */; };
 		848ECFE02A0FA122005B9B21 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */; };
-		848ECFE22A0FA2FC005B9B21 /* ProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		845B6A432A0643170011148E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
-		848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 			children = (
 				848ECFDC2A0FA087005B9B21 /* ProfileViewController.swift */,
 				848ECFDF2A0FA122005B9B21 /* ProfileHeaderView.swift */,
-				848ECFE12A0FA2FC005B9B21 /* ProfileTableHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -170,7 +167,6 @@
 			files = (
 				845B6A442A0643170011148E /* PostViewController.swift in Sources */,
 				845B6A282A028DDF0011148E /* ViewController.swift in Sources */,
-				848ECFE22A0FA2FC005B9B21 /* ProfileTableHeaderView.swift in Sources */,
 				845B6A242A028DDF0011148E /* AppDelegate.swift in Sources */,
 				845B6A262A028DDF0011148E /* SceneDelegate.swift in Sources */,
 				848ECFDD2A0FA088005B9B21 /* ProfileViewController.swift in Sources */,

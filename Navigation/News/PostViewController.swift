@@ -17,7 +17,7 @@ class PostViewController: UIViewController {
         barButtonItem()
         title = "Мой пост"
     }
-    func barButtonItem() {
+    private func barButtonItem() {
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(tapBarButton))
         navigationItem.rightBarButtonItem = barButtonItem
     }
