@@ -94,7 +94,6 @@ class ProfileHeaderView: UIView {
     //MARK: - Private func
     
     private func setupViews() {
-        translatesAutoresizingMaskIntoConstraints = false
         addSubview(avatarLabel)
         addSubview(statusButton)
         addSubview(statusLabel)
@@ -150,7 +149,6 @@ extension ProfileHeaderView {
             
             
             avatarLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 27),
-//            avatarLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             avatarLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
             
             
